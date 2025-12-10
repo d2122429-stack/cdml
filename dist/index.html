@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive web application with mobile-first design">
+  <title>Responsive Web App</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-gray-50">
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+    <div class="content-max-width px-4 sm:px-6 md:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold">
+            R
+          </div>
+          <span class="font-bold text-lg text-gray-900 hidden sm:inline">Responsive App</span>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center space-x-1">
+          <a href="#features" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary rounded-lg focus-visible:outline-primary transition-colors">
+            Features
+          </a>
+          <a href="#about" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary rounded-lg focus-visible:outline-primary transition-colors">
+            About
+          </a>
+          <a href="#contact" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary rounded-lg focus-visible:outline-primary transition-colors">
+            Contact
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button (Hamburger) -->
+        <button
+          id="mobile-menu-btn"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          class="md:hidden p-2 text-gray-600 hover:text-primary hover:bg-gray-100 rounded-lg transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <!-- CTA Button (Desktop) -->
+        <a href="#contact" class="hidden sm:inline-flex btn-base btn-primary text-sm">
+          Get Started
+        </a>
+      </div>
+
+      <!-- Mobile Navigation Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden pb-4 space-y-2"
+        role="navigation"
+        aria-label="Mobile navigation"
+      >
+        <a href="#features" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-lg transition-colors">
+          Features
+        </a>
+        <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-lg transition-colors">
+          About
+        </a>
+        <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-lg transition-colors">
+          Contact
+        </a>
+        <div class="pt-2 border-t border-gray-200">
+          <a href="#contact" class="block btn-base btn-primary justify-center text-sm">
+            Get Started
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="section-padding section-margin bg-gradient-to-br from-blue-50 to-indigo-50">
+    <div class="content-max-width">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+        <!-- Content -->
+        <div class="space-y-4 sm:space-y-6">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+            Build Responsive Web Apps
+          </h1>
+          <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
+            A modern, accessible, and responsive web application template built with Tailwind CSS. Perfect for startups and projects that prioritize mobile-first design.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2">
+            <a href="#features" class="btn-base btn-primary justify-center">
+              Explore Features
+            </a>
+            <a href="#about" class="btn-base bg-gray-200 text-gray-900 hover:bg-gray-300 justify-center">
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <!-- Illustration Placeholder -->
+        <div class="hidden md:flex items-center justify-center">
+          <div class="w-full aspect-square bg-gradient-to-br from-primary to-blue-700 rounded-2xl shadow-lg opacity-80"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section-padding section-margin">
+    <div class="content-max-width">
+      <div class="text-center mb-8 sm:mb-12 md:mb-16">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
+          Key Features
+        </h2>
+        <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+          Everything you need to build a modern, responsive web application
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <!-- Feature Card 1 -->
+        <div class="card p-6 sm:p-8">
+          <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-2">
+            Mobile First
+          </h3>
+          <p class="text-sm sm:text-base text-gray-600">
+            Optimized for mobile devices with responsive breakpoints at 640px, 768px, 1024px, and beyond.
+          </p>
+        </div>
+
+        <!-- Feature Card 2 -->
+        <div class="card p-6 sm:p-8">
+          <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center text-white mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-2">
+            High Performance
+          </h3>
+          <p class="text-sm sm:text-base text-gray-600">
+            Lightweight CSS framework with smooth transitions and optimized animations for fast page loads.
+          </p>
+        </div>
+
+        <!-- Feature Card 3 -->
+        <div class="card p-6 sm:p-8">
+          <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center text-white mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m7.538-4a2.5 2.5 0 00-5.076-.583A2.5 2.5 0 006.462 9m0 0A2.5 2.5 0 0011.538 3.5" />
+            </svg>
+          </div>
+          <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-2">
+            Accessible
+          </h3>
+          <p class="text-sm sm:text-base text-gray-600">
+            WCAG compliant with focus outlines, semantic HTML, and ARIA labels for screen readers.
+          </p>
+        </div>
+
+        <!-- Feature Card 4 -->
+        <div class="card p-6 sm:p-8">
+          <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+            </svg>
+          </div>
+          <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-2">
+            Customizable
+          </h3>
+          <p class="text-sm sm:text-base text-gray-600">
+            Tailwind CSS configuration allows easy theming with custom colors, spacing, and typography.
+          </p>
+        </div>
+
+        <!-- Feature Card 5 -->
+        <div class="card p-6 sm:p-8">
+          <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center text-white mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+            </svg>
+          </div>
+          <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-2">
+            Dark Mode Ready
+          </h3>
+          <p class="text-sm sm:text-base text-gray-600">
+            Easily extendable for dark mode support with Tailwind's dark mode utilities.
+          </p>
+        </div>
+
+        <!-- Feature Card 6 -->
+        <div class="card p-6 sm:p-8">
+          <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center text-white mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-2">
+            Smooth Interactions
+          </h3>
+          <p class="text-sm sm:text-base text-gray-600">
+            Smooth scroll behavior and transitions for enhanced user experience across all devices.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section-padding section-margin bg-gray-100">
+    <div class="content-max-width">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+        <!-- Image Placeholder -->
+        <div class="hidden md:flex items-center justify-center order-last">
+          <div class="w-full aspect-square bg-gradient-to-br from-indigo-100 to-blue-100 rounded-2xl shadow-lg"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="space-y-4 sm:space-y-6">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+            Why Choose Our Template?
+          </h2>
+          <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
+            Built with modern web standards and best practices, our template provides a solid foundation for building responsive web applications. It's optimized for performance and accessibility.
+          </p>
+          <ul class="space-y-3 text-sm sm:text-base text-gray-600">
+            <li class="flex items-start space-x-3">
+              <span class="text-primary font-bold text-lg mt-0.5">✓</span>
+              <span>Responsive design with mobile-first approach</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="text-primary font-bold text-lg mt-0.5">✓</span>
+              <span>Built-in accessibility features and ARIA labels</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="text-primary font-bold text-lg mt-0.5">✓</span>
+              <span>Smooth scroll behavior for better UX</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="text-primary font-bold text-lg mt-0.5">✓</span>
+              <span>Consistent color and hover states</span>
+            </li>
+            <li class="flex items-start space-x-3">
+              <span class="text-primary font-bold text-lg mt-0.5">✓</span>
+              <span>Focus outlines for keyboard navigation</span>
+            </li>
+          </ul>
+          <a href="#contact" class="inline-flex btn-base btn-accent">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding section-margin">
+    <div class="content-max-width">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
+          Get Started Today
+        </h2>
+        <p class="text-base sm:text-lg text-gray-600 mb-8 sm:mb-12">
+          Ready to build your responsive web application? Contact us for more information or start exploring the features.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+          <button class="btn-base btn-primary text-base sm:text-lg py-3">
+            Start Project
+          </button>
+          <button class="btn-base bg-gray-200 text-gray-900 hover:bg-gray-300 text-base sm:text-lg py-3">
+            Schedule Demo
+          </button>
+        </div>
+
+        <div class="mt-12 sm:mt-16 pt-8 sm:pt-12 border-t border-gray-200">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
+            <div>
+              <h3 class="font-semibold text-gray-900 mb-2">Email</h3>
+              <p class="text-gray-600 text-sm sm:text-base">contact@responsive.app</p>
+            </div>
+            <div>
+              <h3 class="font-semibold text-gray-900 mb-2">Phone</h3>
+              <p class="text-gray-600 text-sm sm:text-base">+1 (555) 123-4567</p>
+            </div>
+            <div>
+              <h3 class="font-semibold text-gray-900 mb-2">Address</h3>
+              <p class="text-gray-600 text-sm sm:text-base">123 Web Street, Tech City</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200 section-padding">
+    <div class="content-max-width">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold">
+              R
+            </div>
+            <span class="font-bold">Responsive App</span>
+          </div>
+          <p class="text-sm text-gray-400">
+            A modern, responsive web application template for the modern web.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-3 text-white">Product</h3>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="#features" class="hover:text-primary transition-colors">Features</a></li>
+            <li><a href="#about" class="hover:text-primary transition-colors">About</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Pricing</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Documentation</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-3 text-white">Company</h3>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-primary transition-colors">About Us</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Blog</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Careers</a></li>
+            <li><a href="#contact" class="hover:text-primary transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-3 text-white">Legal</h3>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="#" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Terms of Service</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p class="text-sm text-gray-400">
+          © 2025 Responsive App. All rights reserved.
+        </p>
+        <div class="flex items-center space-x-6">
+          <a href="#" class="text-gray-400 hover:text-primary transition-colors" aria-label="GitHub">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.49.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.603-3.369-1.343-3.369-1.343-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.544 2.914 1.186.092-.924.35-1.544.636-1.9-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.195 22 16.442 22 12.017 22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-primary transition-colors" aria-label="Twitter">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8.29 20c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./main.js" type="module"></script>
+</body>
+</html>

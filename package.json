@@ -1,0 +1,26 @@
+{
+  "name": "responsive-web-app",
+  "version": "1.0.0",
+  "description": "A responsive web application with mobile navigation and Tailwind CSS",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "dev": "npm run build -- --watch",
+    "start": "npm run build && open dist/index.html",
+    "lint": "eslint src --ext .js,.html"
+  },
+  "keywords": [
+    "responsive",
+    "mobile-first",
+    "tailwind"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.3.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
